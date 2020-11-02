@@ -15,7 +15,7 @@
         history.pushState({ data: 'pushState' }, 'title을 pushState로', '/pushState.html') // 새로운 주소 추가
     });
         document.querySelector('#replaceState').addEventListener('click', function () {
-    history.replaceState({ data: 'replace' }, 'title을 replaceState로', '/replace.html'); // 주소 바꾸기
+    history.replaceState({ data: 'replace' }, 'title을 replaceState로', 'replace.html'); // 주소 바꾸기
     });
     window.addEventListener('popstate', function () {
         console.log('popstate', history.state);
